@@ -1,0 +1,50 @@
+@forward 'variables';
+@forward 'reset';
+//@forward 'keyframes';
+//@forward 'font-face';
+//@forward 'icons';
+@forward 'forms';
+@forward 'buttons';
+
+body {
+  background-color: var(--body-bg-color);
+  color: #ccc;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  margin: 2em 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(1290px, 90%);
+}
+
+.page-title-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2em;
+  margin-bottom: 1.5em;
+  .page-title {
+    margin: 0;
+  }
+}
+
+.page-title {
+  color: var(--color-primary);
+  margin: 0 0 .5em 0;
+}
+
+.hyperlink {
+  color: var(--color-primary);
+  text-decoration: underline;
+}

@@ -1,0 +1,28 @@
+.panel {
+  display: flex;
+  form {
+    display: flex;
+    align-items: center;
+  }
+}
+.list{
+  margin-bottom: 1em;
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 1em 0;
+    border-bottom: 1px dashed rgba(255 255 255 / 0.1);
+    .name {
+      &.active {
+        text-decoration: line-through;
+        font-style: italic;
+      }
+    }
+    .controls {
+      display: flex;
+      gap: .5em;
+    }
+  }
+}

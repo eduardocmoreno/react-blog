@@ -1,0 +1,36 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.5em 0.75em;
+  border: 0;
+  border-radius: var(--border-radius);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.25s;
+  cursor: pointer;
+  &.btn-primary {
+    background: var(--color-primary);
+    color: #333;
+  }
+  &.btn-secondary {
+    background: var(--color-secondary);
+  }
+  &.btn-error {
+    background: var(--color-error);
+  }
+  &.btn-ig {
+    background: var(--bg-color-ig);
+  }
+  &.btn-big {
+    font-size: 1.8rem;
+  }
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 3px 0 rgba(#000, 0.1);
+  }
+}

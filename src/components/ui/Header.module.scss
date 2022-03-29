@@ -1,0 +1,35 @@
+.root {
+  padding: 1em 0;
+  background: rgba(0 0 0 / .3);
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .5em;
+      font-weight: bold;
+      .icon {
+        color: var(--color-primary);
+        font-size: 3rem;
+      }
+    }
+    nav {
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      margin-left: auto;
+      font-size: 1.3rem;
+      a {
+        color: var(--color-primary);
+        text-transform: uppercase;
+      }
+    }
+    .login {
+      display: flex;
+      gap: .5em;
+      text-transform: uppercase;
+    }
+  }
+}

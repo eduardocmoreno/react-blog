@@ -1,0 +1,16 @@
+.root {
+  margin: 2em 0;
+}
+.counter {
+  text-align: center;
+  font-size: 8rem;
+  line-height: 1.15;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.controls {
+  display: flex;
+  gap: 1em;
+  place-content: center;
+  margin-top: 1em;
+}

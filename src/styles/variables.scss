@@ -1,0 +1,36 @@
+@use '../styles/mixins.scss' as *;
+
+:root {
+  --color-primary: #61dafb;
+  --color-primary-rgb: 97, 218, 251;
+
+  --color-secondary: #8dc891;
+  --color-secondary-rgb: 141, 200, 145;
+
+  --color-error: #993131;
+  --color-error-rgb: 153, 49, 49;
+
+  --bg-color-ig: linear-gradient(20deg, #f10009, #b900b3, #4a62d4);
+
+  --body-bg-color: #222;
+
+  --ff-main: 'Arial';
+  --ff-pair: '';
+
+  --border-radius: 0.25em;
+
+  --shadow: 0 10px 30px rgba(0 0 0 / 0.1);
+
+  --header-top-height: 30px;
+  --header-bottom-height: 100px;
+  --header-height: calc(var(--header-top-height) + var(--header-bottom-height));
+  --header-z-index: 99;
+
+  --menu-z-index: 98;
+
+  --light-box-z-index: 100;
+
+  @include bp(sm) {
+    --header-height: 80px;
+  }
+}
